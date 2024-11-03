@@ -505,7 +505,7 @@ section.reviews .wrapper .slider__wrapper .review__section .review__list h6 {
 }
 
 section.reviews .wrapper .slider__wrapper {
-    overflow: hidden;
+    overflow: visible;
 }
 
 section.reviews .wrapper .slider__wrapper .icon__wrap {
@@ -625,7 +625,7 @@ section.work .wrapper .slider__wrapper .slider .slide {
 }
 
 section.work .wrapper .slider__wrapper {
-    overflow: hidden;
+    overflow: visible;
 }
 section.certifications .icon__wrap {
     display: flex;
