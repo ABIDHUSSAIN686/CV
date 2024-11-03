@@ -775,6 +775,9 @@ footer {
     section.counter__section > div {
         margin-bottom: 2rem;
     }
+    section.certifications .wrapper {
+        grid-template-columns: 1fr; 
+    }
 }
 
 section.certifications .wrapper {
