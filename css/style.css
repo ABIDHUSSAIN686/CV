@@ -208,7 +208,6 @@ main {
     position: absolute;
     top: 28px;
     left:0;
-    border: 1px dotted var(--danger);
 }
 section.about .content {
     display: grid;
@@ -749,6 +748,7 @@ section.certifications .wrapper {
    section.work .wrapper{
        display: block;
    }
+   
    section.work .wrapper .slider__wrapper {
        margin-bottom: 8rem;
    }
@@ -773,11 +773,11 @@ section.certifications .wrapper {
         margin-bottom: 2rem;
     }
 
-    section.certifications .wrapper {
+    section.reviews .wrapper .slider__wrapper .review__section {
         grid-template-columns: 1fr; 
     }
 
-    section.reviews .wrapper .slider__wrapper .review__section {
+    section.certifications .wrapper {
         grid-template-columns: 1fr; 
     }
 }
@@ -836,7 +836,7 @@ section.certifications .wrapper {
     section.certifications .wrapper {
         grid-template-columns: 1fr; 
     }
-    
+
     section.certifications .wrapper {
         grid-template-columns: 1fr; 
     }
