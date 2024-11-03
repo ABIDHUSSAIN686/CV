@@ -505,7 +505,7 @@ section.reviews .wrapper .slider__wrapper .review__section .review__list h6 {
 }
 
 section.reviews .wrapper .slider__wrapper {
-    overflow: visible;
+    overflow: hidden;
 }
 
 section.reviews .wrapper .slider__wrapper .icon__wrap {
@@ -677,8 +677,6 @@ section.certifications .slide p {
     color: #e4e3e8;
 }
 
-
-
 section.partners .brands__wrapper {
     display: flex;
     align-items: center;
@@ -779,6 +777,15 @@ footer {
     }
 }
 
+section.certifications .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    text-align: left;
+    padding: 0 20px;
+}
+
 @media (max-width: 576px) {
     section.profile {
         align-items: center; 
@@ -801,4 +808,8 @@ footer {
     section.work .wrapper .portfolio .portfolio__wrapper {
         margin-top: 0;
     }
+    section.certifications .wrapper {
+        grid-template-columns: 1fr; 
+    }
+    
 }
