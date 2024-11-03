@@ -756,6 +756,18 @@ footer {
     section.partners .brands__wrapper img {
         margin-bottom: 2rem;
     }
+    section.certifications .wrapper {
+        grid-template-columns: 1fr; 
+    }
+}
+
+section.certifications .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    text-align: left;
+    padding: 0 20px;
 }
 
 @media (max-width: 768px) {
@@ -778,15 +790,6 @@ footer {
     section.certifications .wrapper {
         grid-template-columns: 1fr; 
     }
-}
-
-section.certifications .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: start;
-    text-align: left;
-    padding: 0 20px;
 }
 
 @media (max-width: 576px) {
