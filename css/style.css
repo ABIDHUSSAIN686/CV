@@ -706,6 +706,22 @@ footer {
     color: var(--ternary);
 }
 
+section.reviews .wrapper .slider__wrapper .review__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; 
+    width: 100%;
+}
+
+section.certifications .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    text-align: left;
+    padding: 0 20px;
+}
+
 /* Media Queries  */
 
 @media (max-width: 1280px) {
@@ -759,15 +775,9 @@ footer {
     section.certifications .wrapper {
         grid-template-columns: 1fr; 
     }
-}
-
-section.certifications .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: start;
-    text-align: left;
-    padding: 0 20px;
+    section.reviews .wrapper .slider__wrapper .review__section {
+        grid-template-columns: 1fr; 
+    }
 }
 
 @media (max-width: 768px) {
