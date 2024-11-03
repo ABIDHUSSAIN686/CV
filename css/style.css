@@ -105,9 +105,6 @@ section.profile .left p {
     color: var(--mild);
     font-size:14px;
 }
-section.profile .left .cd-headline.loading-bar .cd-words-wrapper::after {
-    background: linear-gradient(to right, var(--secondary), var(--success));
-}
 
 section.profile .left p b {
     padding-bottom:1rem;
@@ -329,16 +326,73 @@ section.skills .content .left .item:after {
     margin-left: -21px;
 }
 
+section.workexperience {
+    padding: 2rem;
+    padding-left: 3rem;
+}
+section.workexperience .content {
+    display: block;
+}
+section.workexperience .content .inner__right {
+    margin-top: 1rem;
+}
+section.workexperience .content .heading {
+    margin-bottom: 2rem;
+}
+section.workexperience .content .heading i {
+    color: var(--fade);
+    font-size: 52px;
+}
+section.workexperience .content .heading h5 {
+    font-size: 16px;
+    margin-top: 0.5rem;
+    color: var(--mild);
+}
+section.workexperience .content .item {
+    margin-bottom: 2rem;
+}
+section.workexperience .content .item blockquote {
+    margin: 0; 
+}
+section.workexperience .content .item h1 {
+    font-size: 16px;
+    margin-top: 1rem;
+    color: var(--mild);
+}
+section.workexperience .content .item h2 {
+    font-size: 14px;
+    margin-top: 0.5rem;
+    color: var(--mild);
+}
+section.workexperience .content .item h3 {
+    color: var(--mild);
+    line-height: 1.6;
+    font-size: 13px;
+    margin-bottom: 0.5rem; 
+}
+section.workexperience .content .item p {
+    margin: 0 auto;
+    padding-top: 5px;
+}
+section.workexperience .content .item ul {
+    margin-top: 0.5rem;
+    padding-left: 35px;
+}
+section.workexperience .content .item li {
+    color: var(--ternary);
+    font-size: 14px;
+    margin-top: 0.5rem;
+    padding-left: 20px;
+}
+
 .right {
     width: 100%;
 }
-
 .skills__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px; 
 }
-
 .skill-box {
     background-color: #20294a; 
     padding: 10px; 
@@ -350,7 +404,6 @@ section.skills .content .left .item:after {
     margin-bottom: 1rem;
     box-shadow: 0px 0px 1px 0.25px #4d79f6;
 }
-
 .skill-box h4 {
     margin: 0;
     padding: 0;
@@ -574,6 +627,57 @@ section.work .wrapper .slider__wrapper .slider .slide {
 section.work .wrapper .slider__wrapper {
     overflow: hidden;
 }
+section.certifications .icon__wrap {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: var(--info);
+    margin-bottom: 20px; 
+}
+section.certifications .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+    align-items: start;
+    text-align: left;
+    padding: 0 20px;
+}
+section.certifications .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+section.certifications .slide h2 {
+    font-size: 16px;
+    color: var(--mild);
+    margin-top: 1rem;
+}
+section.certifications .slide h3 {
+    font-size: 13px;
+    color: var(--mild);
+    margin-top: 0.5rem;
+}
+section.certifications .slide p {
+    color: var(--ternary);
+    line-height: 1.6;
+    font-size: 12px;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+.certifications_quote {
+    margin: 25px 0;
+    padding-left: 20px;
+    border-left: 3px solid #4d79f6;
+}
+    
+.certifications_quote, p , a, li {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #e4e3e8;
+}
+
+
 
 section.partners .brands__wrapper {
     display: flex;
@@ -594,96 +698,6 @@ section.partners .brands__wrapper {
 
 .github-button:hover {
     background-color: var(--info-dark); 
-}
-
-section.contact .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 60px;
-    margin-top: 40px;
-    align-items: center;
-}
-
-section.contact .wrapper .left > div {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-section.contact .wrapper .left > div div:nth-child(1) {
-    margin-right: 10px;
-}
-section.contact .wrapper .left i {
-    font-size: 30px;
-    color: var(--info);
-}
-
-section.contact .wrapper .left h4 {
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-section.contact .wrapper .left {
-    color: var(--ternary);
-}
-
-section.contact .wrapper .left h4 + span {
-    font-weight: 100;
-    font-size: 14px;
-}
-
-section.contact .wrapper .right .form__group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-    align-items: center;
-    margin-bottom: 14px;
-}
-
-section.contact .wrapper .right .form__group > div {
-    display: flex;
-    flex-direction: column;
-}
-
-section.contact .wrapper .right .form__group > div label {
-    color: var(--ternary);
-    margin-bottom: 8px;
-}
-
-section.contact .wrapper .right .form__group > div input, section.contact .wrapper .right .form__group.textarea__wrapper textarea {
-    padding: 10px;
-    border-radius: 4px;
-    background: transparent;
-    border: 1px solid var(--dark-blue);
-    color: var(--ternary);
-    font-size: 16px;
-}
-
-section.contact .wrapper .right .form__group > div input:focus, section.contact .wrapper .right .form__group.textarea__wrapper textarea:focus {
-    border-color: var(--secondary);
-    outline: none;
-}
-
-section.contact .wrapper .right .form__group.textarea__wrapper {
-    display: block;
-    width: 100%;
-}
-
-section.contact .wrapper .right button {
-    background: var(--info);
-    border: none;
-    padding: 1rem 2rem;
-    color: var(--pure);
-    font-size: 14px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-}
-
-section.contact .wrapper .right button:hover {
-    background: var(--secondary);
-
 }
 
 footer {
@@ -755,16 +769,6 @@ footer {
         margin-bottom: 6rem;
     }
 
-    section.contact .wrapper {
-        display: block;
-    }
-    section.contact .wrapper .left {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
     section.counter__section {
         display: flex;
         justify-content: space-between;
@@ -796,9 +800,5 @@ footer {
 
     section.work .wrapper .portfolio .portfolio__wrapper {
         margin-top: 0;
-    }
-
-    section.contact .wrapper .right .form__group {
-        grid-template-columns: 1fr;
     }
 }
