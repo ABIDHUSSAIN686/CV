@@ -5,16 +5,6 @@ $(document).ready(function(){
         dropRadius:10
     });
 
-    const bars = document.querySelectorAll('.progress__bar');
-
-    bars.forEach(function(bar){
-        let percentage = bar.dataset.percent;
-        let tooltip = bar.children[0];
-        tooltip.innerText = percentage + '%';
-        bar.style.width = percentage + '%';
-    })
-
-    // Counter
 
     const counters = document.querySelectorAll('.counter');
 
@@ -110,12 +100,5 @@ console.log($('.magnify').magnificPopup)
         zoom : {
             enable: true
         }
-    });
-
-    // Slider
-
-    $('.slider').slick({
-        arrows: false,
-        autoplay: true
     });
 });
