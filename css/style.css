@@ -772,9 +772,11 @@ section.certifications .wrapper {
     section.partners .brands__wrapper img {
         margin-bottom: 2rem;
     }
+
     section.certifications .wrapper {
         grid-template-columns: 1fr; 
     }
+
     section.reviews .wrapper .slider__wrapper .review__section {
         grid-template-columns: 1fr; 
     }
@@ -794,9 +796,15 @@ section.certifications .wrapper {
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
     section.counter__section > div {
         margin-bottom: 2rem;
     }
+
+    section.certifications .wrapper {
+        grid-template-columns: 1fr; 
+    }
+
     section.certifications .wrapper {
         grid-template-columns: 1fr; 
     }
@@ -824,6 +832,11 @@ section.certifications .wrapper {
     section.work .wrapper .portfolio .portfolio__wrapper {
         margin-top: 0;
     }
+
+    section.certifications .wrapper {
+        grid-template-columns: 1fr; 
+    }
+    
     section.certifications .wrapper {
         grid-template-columns: 1fr; 
     }
